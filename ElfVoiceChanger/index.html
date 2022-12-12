@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Code Nation 12 Games of Christmas</title>
+</head>
+<body>
+    <a id="CNLogo" href="../index.html">
+        <img id="CNLogoImage" src="../images/CNFullLogo.png" alt="Code Nation Logo">
+    </a>
+    <div class="pageWrap">
+        <h1>Elf Voice Changer</h1>
+        <p>Press <b>Record Message</b> then speak and once finished press <b>Stop Recording</b> <br> You can <b>click on the elf</b> to repeat your message</p>
+        <p>
+            <button id="record">Record Message</button>
+            <button id="stopRecord" disabled>Stop Recording</button>
+        </p>
+        <p>
+            <audio id="recordedAudio"></audio>
+        </p> 
+    </div>  
+    <h1 class="warning">Sorry, this game does not work on this device or browser.</h1>
+
+    <div id="elf" onclick="playMessage()">
+        <svg viewBox="0 0 200 100">
+            <path d="m 10 80 a 200 200 10 0 1 10 -55 a 10 10 0 0 1 5 -5 a 300 300 0 0 1 100 -10 a 6 6 0 0 1 5 5 a 200 200 0 0 1 10 80 a 2 2 0 0 1 -5 0 l -20 -60 a 3 3 0 0 0 -2 -2 l -20 5 a 3 3 0 0 0 -2 2 l 3 40 l -85 0" />
+        </svg>
+        <div class="head"></div>
+        <div id="mouth"></div>
+        <div class="eyeLeft"></div>
+        <div class="eyeRight"></div>
+        <div class="ears"></div>
+        <div class="hair"></div>
+        <div class="body"></div>
+        <div class="buttons"></div>
+        <div class="belt"></div>
+        <div class="beltBuckle"></div>
+        <div class="legs"></div>
+        <div class="feet"></div>
+        <div class="arms"></div>
+        <div class="hands"></div>
+    </div>
+
+    <button id="demon" onclick="playDemonMessage()">Demon Elf</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>

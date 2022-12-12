@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courgette', cursive;
+    background-image: url('./images/christmasBackground.jpg');
+    background-size: 300px;
+}
+
+#CNLogo{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    z-index: 20;
+}
+  
+#CNLogo > img{
+    height: 5vh;
+    padding: 10px 20px;
+}
+
+.wrap{
+    background-color: hsla(0, 0%, 47%, 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    margin: 40px 0 0 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-family: 'Gilroy';
+}
+h3{
+    font-family: 'Gilroy';
+    margin: 0;
+    text-align: center;
+}
+#menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 5% 10%;
+    z-index: 10;
+    border-radius: 20px;
+}
+#menu > button{
+    height: 50px;
+    width: 100px;
+    font-family: 'Courgette', cursive;
+    background-color: red;
+    color: white;
+    border: 3px solid rgb(165, 0, 0);
+    border-radius: 10px;
+}
+.memory-game {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+}
+.memory-card {
+    width: 158px;
+    height: 158px;
+    margin: 1px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+  
+.memory-card.flip {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+}
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 5px;
+  background: #1C7CCC;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 600px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100vh;
+        font-family: 'Courgette', cursive;
+        background-image: url('./images/christmasBackground.jpg');
+        background-size: 300px;
+    }
+    .wrap{
+        backdrop-filter: blur(3px);
+        border-radius: 10px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .memory-game {
+        width: 100vw;
+        height: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        perspective: 1000px;
+    }
+    .memory-card {
+        width: calc(25% - 2px);
+        height: calc(25% - 2px);
+        margin: 1px;
+        position: relative;
+        transform: scale(1);
+        transform-style: preserve-3d;
+        transition: transform .5s;
+        box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+        opacity: 1;
+    }
+      
+    .memory-card.flip .back-face{
+        opacity: 0;
+    }
+
+    .front-face,
+    .back-face {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      position: absolute;
+      border-radius: 5px;
+      background: #1C7CCC;
+      backface-visibility: hidden;
+    }
+    
+    .front-face {
+        opacity: 0;
+    }
+    .memory-card.flip .front-face{
+        opacity: 1;
+    }
+    #CNLogo{
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 0px;
+        top: 0;
+        transform: translateX(0%);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: 20;
+    }
+      
+    #CNLogo > img{
+        height: 15px;
+        padding: 5px 10px;
+    }
+}

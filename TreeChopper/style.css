@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+body{
+    margin: 0;
+    overflow: hidden;
+    cursor: default;
+}
+
+#CNLogo{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+  
+#CNLogo > img{
+    height: 5vh;
+    padding: 10px 20px;
+}
+
+.message{
+    display: none;
+}
+
+#menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: 'VT323', monospace;
+    text-align: center;
+    padding: 20px;
+    z-index: 15;
+}
+
+.scoreSheet{
+    width: 100%;
+}
+
+.title{
+    margin: 0;
+    font-size: 60px;
+}
+.instructions{
+    font-family: 'Gilroy';
+    padding: 0 80px;
+    font-size: 30px;
+}
+.startButton{
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 20px;
+}
+
+#axe{
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    height: 100px;
+    width: 100px;
+    transform: rotate(-45deg);
+    transition: transform 0.1s;
+    cursor: none;
+}
+
+#axe:active{
+    transform: rotate(0deg) translate(35px, 20px);
+}
+
+.ground{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 64px;
+    background-image: url('./images/snowFloor.png');
+    background-size: 64px;
+}
+
+.sky{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: calc(100vh - 64px);
+    background-image: url('./images/winterBackground.png');
+    background-repeat: repeat-x;
+    background-size: calc(100vh - 64px);
+    z-index: -10;
+}
+
+@media screen and (orientation: portrait){
+    #CNLogo{
+        display: none;
+    }
+
+    #axe{
+        display: none;
+    }
+    .ground{
+        display: none;
+    }
+    .message{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+        width: 100vw;
+        z-index: 10;
+        background-color: brown;
+        font-family: 'VT323', monospace;
+        text-align: center;
+    }
+    #menu{
+        display: none;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-height: 600px){
+    #axe{
+        display: none;
+    }
+    #menu{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        font-family: 'VT323', monospace;
+        text-align: center;
+        padding: 20px;
+        z-index: 15;
+    }
+    .title{
+        margin: 0;
+        font-size: 40px;
+    }
+    .instructions{
+        padding: 0 40px;
+        font-size: 20px;
+    }
+    .startButton{
+        font-family: 'VT323', monospace;
+        text-align: center;
+        font-size: 40px;
+        padding: 10px 20px;
+    }
+    #CNLogo{
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 0px;
+        top: 0;
+        transform: translateX(0%);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: 20;
+    }
+      
+    #CNLogo > img{
+        height: 15px;
+        padding: 5px 10px;
+    }
+}

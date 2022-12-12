@@ -1,0 +1,157 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Light.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body{
+  margin: 0;
+  background-image: url('./images/christmasBackground.jpg');
+  overflow: hidden;
+}
+
+#CNLogo{
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+#CNLogo > img{
+  height: 5vh;
+  padding: 10px 20px;
+}
+
+
+.gameWrap{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+}
+canvas{
+  border: 2px solid black;
+  background-color: white;
+}
+
+p{
+  font-family: 'Gilroy';
+  width: 644px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 20px;
+  text-align: center;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  background-color: white;
+}
+
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Gilroy';
+  font-size: 10px;
+  background-color: white;
+  padding: 0px 0px 0px 20px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+#score{
+  margin: auto 20px auto 10px;
+}
+#highscore{
+  margin: auto 20px auto 10px;
+}
+#start{
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, calc(-50% + 27.5px));
+  height: 100px;
+  width: 200px;
+  background-color: #00d0ff;
+  border-radius: 30px;
+  border: 5px solid #00a6ff;
+  font-family: 'Gilroy';
+  font-weight: 900;
+  font-size: 30px;
+}
+
+#buttonControls{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  #CNLogo{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0px;
+    top: 0;
+    transform: translateX(0%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 20;
+}
+  
+#CNLogo > img{
+    height: 15px;
+    padding: 5px 10px;
+}
+  .gameWrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  p{
+    display: none;
+  }
+  #buttonControls{
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
+  }
+  .directionButton{
+    height: 100%;
+    width: 100%;
+    font-size: 50px;
+    border-radius: 1px;
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+  #up{
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  #left{
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #right{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #down{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}

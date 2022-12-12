@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Sigmar One', cursive;
+    background-color: #70eaff;
+    padding: 50px 0 0 0;
+}
+#CNLogo{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+  
+#CNLogo > img{
+    height: 5vh;
+    padding: 10px 20px;
+}
+section {
+    text-align: center;
+}
+.game--title{
+    margin: 30px auto;
+}
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 30px auto;
+}
+h2{
+    font-size: 20px;
+    font-family: 'Gilroy';
+}
+label{
+    font-family: 'Gilroy';
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell > img {
+    height: 80px;
+    width: 80px;
+}
+.cell0 {
+    background-image: url('./images/snowflake.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+}
+.cell1 {
+    background-image: url('./images/snowflake.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+}
+.cell2 {
+    background-image: url('./images/snowflake.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+}
+.cell3 {
+    background-image: url('./images/snowflake.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+}
+.cell4 {
+    background-image: url('./images/snowflake.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+}
+.cell5 {
+    background-image: url('./images/snowflake.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+}
+.cell6 {
+    background-image: url('./images/snowflake.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+}
+.cell7 {
+    background-image: url('./images/snowflake.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+}
+.cell8 {
+    background-image: url('./images/snowflake.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+}
+
+.game--restart{
+    padding: 15px 30px;
+    font-size: 15px;
+    background-color: #008cff;
+    border: 4px solid #0059ff;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Sigmar One', cursive;
+}
+
+@media screen and (max-width: 650px){
+    body {
+        font-family: 'Sigmar One', cursive;
+        background-color: #70eaff;
+        padding: 10px 0 0 0;
+    }
+    #CNLogo{
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 0px;
+        top: 0;
+        transform: translateX(0%);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: 20;
+    }
+      
+    #CNLogo > img{
+        height: 15px;
+        padding: 5px 10px;
+    }
+}

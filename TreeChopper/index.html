@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Code Nation 12 Games of Christmas</title>
+</head>
+<body>
+    <a id="CNLogo" href="../index.html">
+        <img id="CNLogoImage" src="../images/CNFullLogo.png" alt="Code Nation Logo">
+    </a>
+    <div class="message">
+        <h1>Please rotate your device</h1>
+        <h3>This game is best played in landscape orientation</h3>
+    </div>
+    <div id="menu">
+        <h1 class="title">Christmas Tree Chopper</h1>
+        <img class="scoreSheet" src="./images/treeChopScore.png" alt="scores">
+        <p class="instructions">Tap on the trees to chop them down before the tree dies (see score sheet above). Click on the perfect Christmas tree to get the most points.</p>
+        <button class="startButton" onclick="start()">Start</button>
+    </div>
+    <div class="sky"></div>
+    <div class="ground"></div>
+    <canvas></canvas>
+    <span style="font-family: 'VT323', monospace;">&nbsp;</span>
+    <img id="axe" src="./images/axe.png" alt="axe">
+
+    <script src="./script.js"></script>
+</body>
+</html>

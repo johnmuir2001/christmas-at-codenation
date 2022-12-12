@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Code Nation 12 Games of Christmas</title>
+</head>
+<body>
+    <a id="CNLogo" href="../index.html">
+        <img id="CNLogoImage" src="../images/CNFullLogo.png" alt="Code Nation Logo">
+    </a>
+    <div class='wrap'>
+        <h3>TIME</h3>
+        <h2 id="time">10</h2>
+        <h2 id="level">Level: 0</h2>
+        <div class="wantedPoster">
+            <img id="wantedImage" src="./images/santaHead.png" alt="wanted">
+        </div>
+    </div>
+    <canvas></canvas>
+    <div id="menu">
+        <h1>Wanted</h1>
+        <p>Look for the Christmas character from the wanted poster then click on them, find them before the time runs out and gain an extra 5 seconds but click anywhere else and you loose 10 seconds. What level can you get to?</p>
+        <button onclick="play()">PLAY</button>
+    </div>
+
+    <p id="points"></p>
+
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>

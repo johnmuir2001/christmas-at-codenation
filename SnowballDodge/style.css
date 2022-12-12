@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Pacifico&display=swap');
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+
+#CNLogo{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+  
+#CNLogo > img{
+    height: 5vh;
+    padding: 10px 20px;
+}
+
+#menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid rgb(161, 1, 1);
+}
+h1{
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+}
+p{
+    font-family: 'Gilroy';
+    margin: 30px 0;
+    width: 60%;
+}
+button{
+    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    color: red;
+    border: 3px solid rgb(161, 1, 1);
+    cursor: pointer;
+    border-radius: 5px;
+}
+canvas{
+    background-color: rgb(218, 218, 218);
+    cursor: crosshair;
+}
+
+@media screen and (max-width: 600px) {
+    #CNLogo{
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 0px;
+        top: 0;
+        transform: translateX(0%);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: 20;
+    }
+      
+    #CNLogo > img{
+        height: 15px;
+        padding: 5px 10px;
+    }
+    #menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        transform: translate(0%, 0%);
+        background-color: red;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 15px;
+        border: 3px solid rgb(161, 1, 1);
+    }
+    h1{
+        margin: 0;
+        font-family: 'Pacifico', cursive;
+    }
+    p{
+        font-family: 'Gilroy';
+        margin: 30px 0;
+        width: 90%;
+    }
+    button{
+        font-family: 'Pacifico', cursive;
+        text-transform: uppercase;
+        height: 80px;
+        width: 130px;
+        font-size: 20px;
+        background-color: white;
+        color: red;
+        border: 3px solid rgb(161, 1, 1);
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}

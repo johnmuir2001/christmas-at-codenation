@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Nation 12 Games of Christmas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a id="CNLogo" href="../index.html">
+    <img id="CNLogoImage" src="../images/CNFullLogo.png" alt="Code Nation Logo">
+  </a>
+    <div class="gameWrap">
+      <p>Use the <b>arrow keys</b> to move the snake and <b>eat the presents</b> to grow and get a highscore</p>
+      <div class="header">
+        <h1>Score:</h1>
+        <h1 id="score">0</h1>
+        <h1>Highscore:</h1>
+        <h1 id="highscore">0</h1>
+      </div>
+      <canvas></canvas>
+      <div id="buttonControls">
+        <button id="up" class="directionButton" onclick='myFunction("up")'>⇧</button>
+        <button id="right" class="directionButton" onclick='myFunction("right")'>⇨</button>
+        <button id="down" class="directionButton" onclick='myFunction("down")'>⇩</button>
+        <button id="left" class="directionButton" onclick='myFunction("left")'>⇦</button>
+      </div>
+    </div>
+    <button id="start" onclick="reset()">PLAY</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
