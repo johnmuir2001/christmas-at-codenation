@@ -120,7 +120,6 @@ window.addEventListener("resize", onResize, false);
 
 let currentTime = new Date().getTime()
 let twelveDays = [
-  new Date('December 12, 2022 00:00:00').getTime(),
   new Date('December 13, 2022 00:00:00').getTime(),
   new Date('December 14, 2022 00:00:00').getTime(),
   new Date('December 15, 2022 00:00:00').getTime(),
@@ -132,6 +131,7 @@ let twelveDays = [
   new Date('December 21, 2022 00:00:00').getTime(),
   new Date('December 22, 2022 00:00:00').getTime(),
   new Date('December 23, 2022 00:00:00').getTime(),
+  new Date('December 24, 2022 00:00:00').getTime(),
 ]
 
 for(let i = 0; i < twelveDays.length; i++){
