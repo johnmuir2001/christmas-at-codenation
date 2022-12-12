@@ -136,6 +136,6 @@ let twelveDays = [
 
 for(let i = 0; i < twelveDays.length; i++){
   if(currentTime > twelveDays[i]){
-    document.getElementsByClassName('game')[i].style.display = 'block';
+    document.getElementsByClassName('game')[i].style.display = 'grid';
   }
 }
