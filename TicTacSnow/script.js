@@ -60,7 +60,13 @@ function handleComputerPlay() {
             computerPlay = winCondition[0]
             break;   
         } else{
-            computerPlay = cellsLeft[Math.floor(Math.random() * cellsLeft.length)]
+            if(cellsLeft.includes(2)){
+                computerPlay = 2
+            } else if(cellsLeft.includes(6)){
+                computerPlay = 6
+            } else {
+                computerPlay = cellsLeft[Math.floor(Math.random() * cellsLeft.length)]
+            }
         }
     }
 
