@@ -120,18 +120,18 @@ window.addEventListener("resize", onResize, false);
 
 let currentTime = new Date().getTime()
 let twelveDays = [
-  new Date('December 13, 2022 00:00:00').getTime(),
-  new Date('December 14, 2022 00:00:00').getTime(),
-  new Date('December 15, 2022 00:00:00').getTime(),
-  new Date('December 16, 2022 00:00:00').getTime(),
-  new Date('December 17, 2022 00:00:00').getTime(),
-  new Date('December 18, 2022 00:00:00').getTime(),
-  new Date('December 19, 2022 00:00:00').getTime(),
-  new Date('December 20, 2022 00:00:00').getTime(),
-  new Date('December 21, 2022 00:00:00').getTime(),
-  new Date('December 22, 2022 00:00:00').getTime(),
-  new Date('December 23, 2022 00:00:00').getTime(),
-  new Date('December 24, 2022 00:00:00').getTime(),
+  new Date('December 13, 2023 00:00:00').getTime(),
+  new Date('December 14, 2023 00:00:00').getTime(),
+  new Date('December 15, 2023 00:00:00').getTime(),
+  new Date('December 16, 2023 00:00:00').getTime(),
+  new Date('December 17, 2023 00:00:00').getTime(),
+  new Date('December 18, 2023 00:00:00').getTime(),
+  new Date('December 19, 2023 00:00:00').getTime(),
+  new Date('December 20, 2023 00:00:00').getTime(),
+  new Date('December 21, 2023 00:00:00').getTime(),
+  new Date('December 22, 2023 00:00:00').getTime(),
+  new Date('December 23, 2023 00:00:00').getTime(),
+  new Date('December 24, 2023 00:00:00').getTime(),
 ]
 
 for(let i = 0; i < twelveDays.length; i++){
